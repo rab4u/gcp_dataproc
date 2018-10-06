@@ -1,0 +1,9 @@
+#RUN CMD
+#c:\Python27>python -m pip install -r C:\Users\Ravi\PycharmProjects\gcloud\learning\python_api_dataproc\conf\requirements.txt
+
+#library contains the core Python library for accessing Google APIs, and also contains the OAuth 2.0 client library
+google-api-python-client
+#To interact with Cloud Storage, you should install the gcloud-python library
+google-cloud
+#This library provides an httplib2 transport for google-auth
+google-auth-httplib2

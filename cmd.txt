@@ -1,0 +1,42 @@
+
+CMDS TO CREATE GOOGLE STORAGE BUCKETS
+=====================================
+c:\Program Files (x86)\Google\Cloud SDK>gsutil mb gs://learndataproc15days_bucket
+Creating gs://learndataproc15days_bucket/...
+
+
+CMD TO SHOW ACTIVE CONFIG OF GOOGLE CLOUD
+=========================================
+c:\Program Files (x86)\Google\Cloud SDK>gcloud config list
+[compute]
+region = asia-south1
+zone = asia-south1-c
+[core]
+account = jobmail.ravi@gmail.com
+disable_usage_reporting = True
+project = learndataproc15days
+
+Your active configuration is: [default]
+
+c:\Program Files (x86)\Google\Cloud SDK>gcloud config list project
+[core]
+project = learndataproc15days
+
+Your active configuration is: [default]
+
+SET THE BUCKET'S DEFAULT ACL TO PUBLIC-READ, WHICH ENABLES USERS TO SEE THEIR UPLOADED IMAGES
+==============================================================================================
+c:\Program Files (x86)\Google\Cloud SDK>gsutil defacl set public-read gs://learn
+dataproc15days_bucket
+Setting default object ACL on gs://learndataproc15days_bucket/...
+/ [1 objects]
+
+TO SEE DISK USAGE OF BUCKET
+============================
+c:\Program Files (x86)\Google\Cloud SDK>gsutil du -s gs://learndataproc15days_bu
+cket
+0           gs://learndataproc15days_bucket
+
+GCLOUD COMMAND-LINE TOOL CREDENTIALS (WHICH ARE AUTOMATICALLY CREATED ON APP ENGINE OR COMPUTE ENGINE)
+======================================================================================================
+gcloud auth application-default login
